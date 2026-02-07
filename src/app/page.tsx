@@ -41,8 +41,9 @@ export default function Home() {
               transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
               className="inline-block mb-6"
             >
-              <div className="bg-green-100 text-green-700 px-6 py-2 rounded-full font-medium">
-                🇦🇺 From Australia to Lebanon 🇱🇧
+              <div className="bg-green-100 text-green-700 px-6 py-2 rounded-full font-medium flex items-center gap-2">
+                <Globe className="w-5 h-5" />
+                To Any Place in the World
               </div>
             </motion.div>
             
@@ -118,6 +119,69 @@ export default function Home() {
             ))}
           </div>
         </div>
+      </section>
+
+      {/* Trusted Brands Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
+            Trusted by Leading Brands
+          </h2>
+          <p className="text-center text-gray-600 text-lg">
+            Partnering with premium distributors and retailers worldwide
+          </p>
+        </div>
+        
+        <div className="relative">
+          <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent z-10"></div>
+          <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-10"></div>
+          
+          <div className="flex animate-scroll">
+            {[...Array(6)].map((_, setIndex) => (
+              <div key={setIndex} className="flex gap-12 px-6">
+                <div className="flex-shrink-0 w-56 h-32 bg-white rounded-xl flex items-center justify-center border border-gray-200 shadow-sm hover:shadow-md transition-shadow p-4">
+                  <div className="relative w-full h-full">
+                    <Image
+                      src="/brands/grape-house.png"
+                      alt="Grape House"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                <div className="flex-shrink-0 w-56 h-32 bg-white rounded-xl flex items-center justify-center border border-gray-200 shadow-sm hover:shadow-md transition-shadow p-4">
+                  <div className="relative w-full h-full">
+                    <Image
+                      src="/brands/louizza.png"
+                      alt="Louizza"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <style jsx>{`
+          @keyframes scroll {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-50%);
+            }
+          }
+
+          .animate-scroll {
+            animation: scroll 40s linear infinite;
+          }
+
+          .animate-scroll:hover {
+            animation-play-state: paused;
+          }
+        `}</style>
       </section>
 
       {/* About Section */}
