@@ -9,7 +9,7 @@ import Navigation from "@/components/Navigation"
 export default function Home() {
   const features = [
     { icon: Leaf, title: "Premium Quality", description: "Handpicked fresh fruits from Australian farms" },
-    { icon: Ship, title: "Global Shipping", description: "Direct shipping from Australia to Lebanon" },
+    { icon: Ship, title: "Global Shipping", description: "Direct shipping from Australia to all over the World" },
     { icon: Award, title: "Certified Excellence", description: "Meeting international quality standards" },
   ]
 
@@ -57,7 +57,7 @@ export default function Home() {
             
             <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-3xl mx-auto">
               Experience the finest selection of Australian fruits, carefully exported 
-              and delivered to Lebanon with excellence and care.
+              and delivered to you with excellence and care.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -195,7 +195,7 @@ export default function Home() {
                 Our Story
               </h2>
               <p className="text-lg mb-6 text-green-50 leading-relaxed">
-                AgriNova bridges the distance between Australia's fertile farms and Lebanon's 
+                AgriNova bridges the distance between Australia's fertile farms and world's 
                 vibrant markets. We specialize in exporting premium quality fruits, ensuring 
                 they arrive fresh and delicious.
               </p>

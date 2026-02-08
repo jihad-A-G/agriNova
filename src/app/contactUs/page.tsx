@@ -170,7 +170,6 @@ export default function ContactUs() {
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
                       <p className="text-gray-600">info@agrinova.com</p>
-                      <p className="text-gray-600">sales@agrinova.com</p>
                     </div>
                   </div>
 
@@ -180,8 +179,7 @@ export default function ContactUs() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                      <p className="text-gray-600">Australia: +61 XXX XXX XXX</p>
-                      <p className="text-gray-600">Lebanon: +961 XX XXX XXX</p>
+                      <p className="text-gray-600">+61 411 699 099</p>
                     </div>
                   </div>
 
@@ -191,8 +189,7 @@ export default function ContactUs() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-1">Locations</h3>
-                      <p className="text-gray-600">Australia: Sydney, NSW</p>
-                      <p className="text-gray-600">Lebanon: Beirut</p>
+                      <p className="text-gray-600">Sydney, NSW</p>
                     </div>
                   </div>
 
@@ -203,7 +200,6 @@ export default function ContactUs() {
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-1">Business Hours</h3>
                       <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                      <p className="text-gray-600">Saturday: 9:00 AM - 2:00 PM</p>
                     </div>
                   </div>
                 </div>
@@ -215,7 +211,7 @@ export default function ContactUs() {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 bg-green-300 rounded-full mt-2"></div>
-                    <span>Direct shipping from Australian farms to Lebanon</span>
+                    <span>Direct shipping from Australian farms</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 bg-green-300 rounded-full mt-2"></div>

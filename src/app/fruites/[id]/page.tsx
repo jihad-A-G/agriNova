@@ -194,7 +194,7 @@ export default function FruitGalleryPage({ params }: { params: Promise<{ id: str
               <h2 className="text-3xl font-bold mb-4 text-gray-900">About This Product</h2>
               <p className="text-gray-600 leading-relaxed mb-6">
                 Our {fruit.name.toLowerCase()} are carefully selected from the finest Australian farms. 
-                Each piece is handpicked to ensure maximum freshness and quality for our customers in Lebanon.
+                Each piece is handpicked to ensure maximum freshness and quality for our customers.
               </p>
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
