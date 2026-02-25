@@ -138,24 +138,26 @@ export default function Home() {
             {[...Array(6)].map((_, setIndex) => (
               <div key={setIndex} className="flex gap-12 px-6">
                 <div className="flex-shrink-0 w-56 h-32 bg-white rounded-xl flex items-center justify-center border border-gray-200 shadow-sm hover:shadow-md transition-shadow p-4">
-                  <div className="relative w-full h-full">
+                  {/* <div className="relative w-full h-full">
                     <Image
                       src="/brands/grape-house.png"
                       alt="Grape House"
                       fill
                       className="object-contain"
                     />
-                  </div>
+                  </div> */}
+                  <h3 className="text-lg font-semibold text-gray-800">SunRise Tropics Export Co.</h3>
                 </div>
                 <div className="flex-shrink-0 w-56 h-32 bg-white rounded-xl flex items-center justify-center border border-gray-200 shadow-sm hover:shadow-md transition-shadow p-4">
-                  <div className="relative w-full h-full">
+                  {/* <div className="relative w-full h-full">
                     <Image
                       src="/brands/louizza.png"
                       alt="Louizza"
                       fill
                       className="object-contain"
                     />
-                  </div>
+                  </div> */}
+                  <h3 className="text-lg font-semibold text-gray-800">VerdantPeak International</h3>
                 </div>
               </div>
             ))}

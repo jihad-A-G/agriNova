@@ -169,7 +169,7 @@ export default function ContactUs() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                      <p className="text-gray-600">info@agrinova.com</p>
+                      <p className="text-gray-600">contact@agrinova-global.com</p>
                     </div>
                   </div>
 
@@ -179,7 +179,7 @@ export default function ContactUs() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                      <p className="text-gray-600">+61 411 699 099</p>
+                      <p className="text-gray-600">0411699099</p>
                     </div>
                   </div>
 

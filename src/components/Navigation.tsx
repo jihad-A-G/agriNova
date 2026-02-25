@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation'
 import { motion } from 'framer-motion'
 import { Menu, X, Leaf } from 'lucide-react'
 import { useState } from 'react'
+import Image from 'next/image'
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -17,21 +18,19 @@ export default function Navigation() {
   ]
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-green-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#f7f7f7] backdrop-blur-md border-b border-green-100">
+      <div className="max-w-7xl max-h-37.5 h-24 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 group">
-            <motion.div
-              whileHover={{ rotate: 360 }}
-              transition={{ duration: 0.6 }}
-              className="bg-gradient-to-br from-green-600 to-green-800 p-2 rounded-lg"
+            <div
+              className="p-2 rounded-lg"
             >
-              <Leaf className="w-6 h-6 text-white" />
-            </motion.div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-green-700 to-green-900 bg-clip-text text-transparent">
+              <Image src="/logo.jpeg" alt="AgriNova Logo" width={150} height={150} />
+            </div>
+            {/* <span className="text-2xl font-bold bg-gradient-to-r from-green-700 to-green-900 bg-clip-text text-transparent">
               AgriNova
-            </span>
+            </span> */}
           </Link>
 
           {/* Desktop Navigation */}
